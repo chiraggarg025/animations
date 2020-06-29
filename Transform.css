@@ -1,0 +1,138 @@
+
+
+/*Transition and Transformation*/
+/*div{
+	width: 200px;
+	height: 200px;
+	background-color: cyan;
+	margin-left: 200px;
+	margin-right: auto;
+	margin-top:25%;
+	transition: 1s ease-in-out;
+}
+div:hover{
+	
+	transform: rotate(360deg);
+	border-radius: 50%;
+	
+}*/
+/*Animation Property*/
+/*@keyframes changeShape{
+	from{
+		border-radius:0%;
+	}
+	to{
+		border-radius:50%;
+	}
+}
+div{
+	width: 200px;
+	height: 200px;
+	background-color: cyan;
+	margin-left: 200px;
+	margin-right: auto;
+	margin-top:25%;
+	animation: changeShape 1s ease-in-out infinite alternate;
+}*/
+
+/*Animation assignment*/
+
+/*Animation 1*/
+
+/*@keyframes bounce{
+	from{
+		transform: translateY(0px);
+	}
+	to{
+		transform: translateY(100px);
+	}
+}
+div{
+	width: 200px;
+	height: 200px;
+	background-color: cyan;
+	margin-left: 200px;
+	margin-right: auto;
+	margin-top:10%;
+	animation: bounce 0.2s ease-in-out 4 alternate;
+}*/
+
+/*Animation 2*/
+
+/*@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+div{
+	width: 200px;
+	height: 200px;
+	background-color: cyan;
+	margin-left: 200px;
+	margin-right: auto;
+	margin-top:10%;
+	animation: rotate 1s ease-in-out infinite alternate;
+}*/
+
+/*Animation 3*/
+
+/*@keyframes fade{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+div{
+	
+	border:2px solid black;
+	margin-left: 200px;
+	margin-right: auto;
+	display: inline-block;
+	margin-top:10%;
+	animation: fade 1.5s ease-in-out infinite alternate;
+}
+div p{
+	font-size: 3rem
+}*/
+
+/*Multiple Animations*/
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes changeShape{
+	from{
+		border-radius:0%;
+		width: 100px;
+		height: 100px;
+	}
+	to{
+		border-radius:50%;
+		width: 200px;
+		height: 200px;
+
+	}
+}
+div{
+	width: 100px;
+	height: 100px;
+	background-color: cyan;
+	margin-left: 200px;
+	margin-right: auto;
+	margin-top:25%;
+	animation-name: changeShape,rotate;
+	animation-duration: 0.8s, 0.8s;
+	animation-direction: alternate, alternate;
+	animation-iteration-count: infinite, infinite;
+
+}
